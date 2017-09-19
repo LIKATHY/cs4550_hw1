@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Design</title>
+</head>
+
+<body>
+
+  <div>
+    <h1>User-First Design</h1>
+
+    <p>1. As a new user I can create a new account.</p>
+    <p>How to: Michael visits the home page. He then clicks on the "Create new user" button/link. A new user form appears on Michael's screen and he fills it in with his name, username, email and password. After he clicks the submit button on the form he will receive an email with a link to confirm his email. Once he clicks on the confirm email link he will be able to use his new account.</p>
+
+    <p>2. As a normal user I can log in to my account.</p>
+    <p>How to: Michael, an existing user, visits the home page. He then clicks on the "Log in" button/link. The log in form appears on Michael's screen and he fills it in with his username and password. After he clicks the log-in button on the form he will be taken to his profile page. He is now logged in.</p>
+
+    <p>3. As a normal user I can post new blogs.</p>
+    <p>How to: Michael, an existing user, visits his profile. He then clicks on the "Create new post" button/link. The create new post form appears on Michael's screen and he fills it in with a title for the post and his blog post content. He can also tag other existing users using "@" and use "#" to classify his posts for people to easily find them. After he clicks the post button on the form he will be taken to his profile. He can now see the new blog he created in his profile.</p>
+
+    <p>4. As a normal user I can follow another user.</p>
+    <p>How to: Michael visits the home page where he can see a search bar. He then clicks on the search bar and enters the username (in this case we'll call vegeta123) of the other user he wishes to follow. This will take him to vegeta123's profile page. Michael can see vegeta123's posts and messages but cannot post as vegeta123. Michael clicks on the "Follow" button/link in vegeta123's profile page. Michael is now following vegeta123 and will appear on vegeta123's list of followers while vegeta123 will appear in Michael's list of "followed".</p>
+
+    <p>5. As a normal user I can view who my followers are.</p>
+    <p>How to: Michael, an existing user, visits his profile page. He then clicks on the "Followers" button/link. This will take Michael to a page listing all the users who are following him.</p>
+
+    <p>6. As a normal user I can edit my profile information.</p>
+    <p>How to: Michael, an existing user, visits his profile page. He then clicks on the "Edit Profile Button" that takes him to an Edit Profile form. He can change his name, password or email. If he changes his email, he will receive an email to his new email address with a link to confirm his new email address. Once he presses on the link on his new email address, his email changing process will be finalized.</p><br>
+  </div>
+
+  <div>
+    <h1>Data-First Design</h1>
+
+    <p>
+    1. Users:<br> 
+    Users will need: name, username, e-mail, posts, followers.
+    </p>
+
+    <p>
+    2. Posts:<br> 
+    Posts will need: description, @ references to other users, # classifications.
+    </p>  
+
+    <p>
+    * Representation issues or data constraints:<br>
+    i) A user can have unlimited amount of followers.<br>
+    ii) A user can only have one username, one password, one name and one email.<br>
+    iii) A blog post can only have one title.<br>
+    iv) A user can't change a post's date.<br> 
+    v) A user must enter valid email.<br>
+    vi) A user must not have empty name, username, password, or email.<br>
+    </p>
+
+    <p>* What will appear in each page:</p>
+    <p> 1. Users:<br>
+	i) (Create, new) or form: Users will see a create new user form where they will fill in Name, UserName, Password and email. Once user is created, he or she should be directed to their new profile page.<br>
+	ii) Show: in users profile main page, user will be able to see all his or her previous posts as well as username and name. They will also have a navbar to the "home" page(where they can see all the blog posts from the people he or she is following), "followed" page (where they can see the a list of users they are following), and "messages" where they can see the public messages sent to them. They will also see buttons to toggle between older and newer posts as well as buttons to manage their user profile and blog posts.<br>
+	iii) Index: In the Followers page, the user will be able to see a list of the users who are following them. Including their username, the follower's number of followers, and a button to visit the profile of the follower.<br>
+	iv) Update: Once users submit the form for editing their user profile, the user should be directed back to main profile page where he or she should be able to see the changes made.<br>
+	v) Delete: Users should be able to delete their accounts through their "manage your profile!" by clicking link provided in the form. Once clicked, they should be directed to the universal home page that appears for new non-existing users.<br>
+	vi) Edit: Users can access edit profile by going to profile page and scrolling down to the "manage your profile!" button. Once clicked, a form will appear allowing the user to change Name, Email or Password. they should also be able to see a link to delete their account.<br>
+	</p>
+
+	<p> 2. Blogs: <br>
+	i) (Create, new) or form: Users will see a create new blog post form where they will fill in a title and then the contents of the post. They should also be able to see a date, which should be automatically generated for them. Users should be able to tag other users wth @ and be able to classify their posts with #. Once they submit the new post form, they will be redirected to their profile page.<br>
+	ii) Show: Users will be able to see the navbar described in Users. They will also see their post title, the date and contents of the post as well as the @ and # tags. Users will also see abutton to modify the post they are seeing.<br>
+	iii) Index: Users will be able to see a list of their existing posts and be able to modify each post through the button provided under each individual post. Users will also be able to see the nav bar. This will all be located under "Manage your blog posts".<br>
+	iv) Update: After users submit their modify blog post form, they will be directed to their profile page, where they will be able to see the changes made.<br>
+	v) Delete: After a user deletes a post through modify blog post form, they will be directed to their profile page, where they will be able to see the that the post has been deleted.<br>
+	vi) Edit: Users will be able to edit their posts by clicking on the modify button under each post or the manage your blog posts button in the profile page. This will direct them to the modify post form where the users will be able to modify their post content, title or even delete their post using the button/link provided.<br>
+	</p>
+
+  </div>
+
+</body>
+</html>
